@@ -4,42 +4,42 @@ on:
     inputs:
       CPU:
         type: choice
-        description: "分支"
+        description: "CPU"
         required: true
         default: sm7475
         options:
           - sm7475
       FEIL:
         type: choice
-        description: "配置文件"
+        description: "Device"
         required: true
         default: realme_gtneo5se
         options:
           - realme_gtneo5se
       CPUD:
         type: choice
-        description: "处理器代号"
+        description: "CPU config"
         required: true
         default: waipio
         options:
           - waipio
       ANDROID_VERSION:
         type: choice
-        description: "内核安卓版本"
+        description: "Android version"
         required: true
         default: android12
         options:
           - android12
       KERNEL_VERSION:
        type: choice
-       description: "内核版本"
+       description: "Kernel version"
        required: true
        default: "5.10"
        options:
          - "5.10"
       BUILD_METHOD:
         type: choice
-        description: "编译方式"
+        description: "Build method"
         required: true
         default: gki
         options:
@@ -47,17 +47,17 @@ on:
           - perf
       SUSFS_CI:
         type: boolean
-        description: "下载SUSFS模块是否使用CI构建？"
+        description: "Download SusFS from CI-builds"
         required: true
         default: false
       VFS:
         type: boolean
-        description: "是否启用手动钩子？"
+        description: "Use VFS"
         required: true
         default: true
       ZRAM:
         type: boolean
-        description: "是否启用添加更多的ZRAM算法？"
+        description: "Enable ZRAM"
         required: true
         default: false
 
