@@ -1,4 +1,4 @@
-# Automated build kernel for GT Neo 5 SE with KernelSU-Next root (GKI method)
+# Automated kernel build for GT Neo 5 SE implementing KernelSU-Next root (GKI method)
 
 [kernel_manifest](https://github.com/tonyst2/kernel_manifest)
 
