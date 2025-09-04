@@ -24,26 +24,6 @@ on:
         description: "Choose SusFS Branch for android12-5.10"
         type: string
         default: "gki-android12-5.10"
-      android13-5_10_susfs_branch:
-        description: "Choose SusFS Branch for android13-5.10"
-        type: string
-        default: "gki-android13-5.10"
-      android13-5_15_susfs_branch:
-        description: "Choose SusFS Branch for android13-5.15"
-        type: string
-        default: "gki-android13-5.15"
-      android14-5_15_susfs_branch:
-        description: "Choose SusFS Branch for android14-5.15"
-        type: string
-        default: "gki-android14-5.15"
-      android14-6_1_susfs_branch:
-        description: "Choose SusFS Branch for android14-6.1"
-        type: string
-        default: "gki-android14-6.1"
-      android15-6_6_susfs_branch:
-        description: "Choose SusFS Branch for android15-6.6"
-        type: string
-        default: "gki-android15-6.6"
       
 jobs:
   build-batch-1:
