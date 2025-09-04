@@ -1,4 +1,4 @@
-name: Build and Release OnePlus Kernels
+name: Build and Release realme Kernels
 
 permissions:
   contents: write  # Allow writing to repository contents (for pushing tags)
@@ -14,27 +14,27 @@ on:
         default: true
 
 jobs:
-  build-kernel-opace2pro:
+  build-kernel-gtneo5se:
     uses: ./.github/workflows/build.yml
     secrets: inherit
     with:
-      model: "OP-ACE-2-PRO"
-      soc: "kalama"
-      branch: "oneplus/sm8550"
-      manifest: "oneplus_ace2_pro_v.xml"
-      android_version: "android13"
-      kernel_version: "5.15"
+      model: "realme-gt-neo-5se"
+      soc: "waipio"
+      branch: "realme/sm7475"
+      manifest: "realme_gtneo5se.xml"
+      android_version: "android12"
+      kernel_version: "5.10"
 
   trigger-release:
     runs-on: ubuntu-latest
     needs:
-        - build-kernel-opace2pro
+        - build-kernel-gtneo5se
     if: ${{ inputs.make_release }}
     env:
-      REPO_OWNER: TheWildJames
-      REPO_NAME: OnePlus_KernelSU_SUSFS
+      REPO_OWNER: tonyst2
+      REPO_NAME: realme_ksun_susfs
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_NAME: "OnePlus Ace 2 Pro Kernel With KernelSU Next & SUSFS v1.5.9"
+      RELEASE_NAME: "realme GT Neo 5 SE Kernel With KernelSU Next & SUSFS v1.5.9"
       RELEASE_NOTES: |
         This release contains KernelSU Next and SUSFS v1.5.9
         
