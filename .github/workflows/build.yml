@@ -80,7 +80,7 @@ jobs:
           
           # Initialize and sync kernel source
           echo "Initializing and syncing kernel source..."
-          repo init -u https://github.com/OnePlusOSS/kernel_manifest.git -b ${{ inputs.branch }} -m ${{ inputs.manifest }} --repo-rev=v2.16 --depth=1
+          repo init -u https://github.com/tonyst2/kernel_manifest.git -b ${{ inputs.branch }} -m ${{ inputs.manifest }} --depth=1
           
           # Sync repo and apply patches
           repo --version
@@ -296,8 +296,8 @@ jobs:
           echo "Building the kernel..."
           rm ./kernel_platform/common/android/abi_gki_protected_exports_* || echo "No protected exports!"
           rm ./kernel_platform/msm-kernel/android/abi_gki_protected_exports_* || echo "No protected exports!"
-          #git config --global user.email "bins4us@hotmail.com"
-          #git config --global user.name "TheWildJames"
+          #git config --global user.email "tonyst21@ya.ru"
+          #git config --global user.name "tonyst2"
           #git add *
           #git commit -s -a -m "getting rid of -dirty"
           if [ -f ./kernel_platform/build_with_bazel.py ]; then
