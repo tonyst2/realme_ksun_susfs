@@ -1,4 +1,4 @@
-# Automated build kernel for GT Neo 5 SE with SukiSU-Ultra root (GKI method)
+# Automated build kernel for GT Neo 5 SE with KernelSU-Next root (GKI method)
 
 [kernel_manifest](https://github.com/tonyst2/kernel_manifest)
 
