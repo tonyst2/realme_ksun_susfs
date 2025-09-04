@@ -4,4 +4,5 @@
 
 # Bugs:
 
-GT Neo 5 SE recovery mode not working (sources issue, should be updated to latest ones by realme/BBK)
+~~GT Neo 5 SE recovery mode not working (sources issue, should be updated to latest ones by realme/BBK)~~
+  - Checked, working, if use script from TheWildJames
