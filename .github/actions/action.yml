@@ -106,7 +106,7 @@ runs:
         mkdir -p "$CONFIG"
         cd "$CONFIG"
         echo "Initializing and syncing kernel source..."
-        $REPO init -u https://github.com/tonyst2/kernel_manifest.git -b ${{ inputs.branch }} -m ${{ inputs.manifest }} --depth=1 --no-clone-bundle --no-tags
+        $REPO init -u https://github.com/tonyst2/kernel_manifest.git -b ${{ inputs.branch }} -m ${{ inputs.manifest }} --repo-rev=v2.16 --depth=1 --no-clone-bundle --no-tags
         $REPO --version
         $REPO --trace sync -c --no-clone-bundle --no-tags --optimized-fetch -j$(nproc --all) --fail-fast
 
